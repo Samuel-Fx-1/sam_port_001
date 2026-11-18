@@ -8,7 +8,7 @@
     "dev": "concurrently \"npm run dev:parcel\" \"npm run dev:api\"",
     "dev:parcel": "parcel src/index.html rankai.html",
     "dev:api": "node server/index.js",
-    "build": "parcel build src/index.html rankai.html --dist-dir dist",
+    "build": "parcel build index.html rankai.html --dist-dir dist",
     "start": "node server/index.js",
     "lint": "eslint src server api"
   },
