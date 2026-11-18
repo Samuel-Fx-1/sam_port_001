@@ -1,7 +1,7 @@
 export default function Navigation({ nav }) {
   return (
     <nav className="nav-wrap">
-      <div className="brand" style={{ fontWeight: 800, fontSize: 1.1rem, letterSpacing: 0.05em }}>
+      <div className="brand" style={{ fontWeight: 800, fontSize: "1.1rem", letterSpacing: "0.05em" }}>
         Samuel Fx
       </div>
       <ul className="nav-list">
@@ -14,3 +14,5 @@ export default function Navigation({ nav }) {
     </nav>
   );
 }
+
+

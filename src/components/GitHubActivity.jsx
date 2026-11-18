@@ -15,7 +15,7 @@ export default function GitHubActivity({ user }) {
   return (
     <section id="github" className="section">
       <div className="container">
-        <div className="sec-head" style={{ marginBottom: 1.5rem }}>
+        <div className="sec-head" style={{ marginBottom: "1.5rem" }}>
           <span className="sec-tag">// github</span>
           <h2>GitHub Activity</h2>
           <p className="text-muted">Recent public repositories.</p>
@@ -37,3 +37,4 @@ export default function GitHubActivity({ user }) {
     </section>
   );
 }
+
