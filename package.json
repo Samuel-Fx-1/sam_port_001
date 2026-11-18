@@ -1,18 +1,34 @@
-
 {
-  "name": "izabayo-portfolio",
-  "version": "1.0.0",
+  "name": "samuel-fx-portfolio",
+  "version": "2.0.0",
   "private": true,
-  "description": "Personal portfolio of Izabayo Samuel — Next.js + OpenRouter AI assistant",
+  "description": "Personal portfolio of Izabayo Samuel (Samuel Fx) — React + Parcel + Express",
+  "author": "Izabayo Samuel <samuelislislegend8@gmail.com>",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "concurrently \"npm run dev:parcel\" \"npm run dev:api\"",
+    "dev:parcel": "parcel src/index.html rankai.html",
+    "dev:api": "node server/index.js",
+    "build": "parcel build src/index.html rankai.html --dist-dir dist",
+    "start": "node server/index.js",
+    "lint": "eslint src server api"
   },
   "dependencies": {
-    "next": "14.2.5",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "process": "^0.11.10"
+  },
+  "alias": {
+    "react": "./node_modules/react",
+    "react-dom": "./node_modules/react-dom"
   }
 }
